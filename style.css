@@ -409,22 +409,46 @@ header {
   text-shadow: 0 0 5px #00f5ff;
 }
 
+.tools-layout {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.tools-left {
+  flex: 1;
+  /* Isi dengan konten kiri kamu nanti */
+}
+
+.tools-right {
+  flex: 1.2;
+}
+
+.tools-icons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 1px; /* Jarak antar kolom kanan-kiri DIKURANGI */
+  row-gap: 20px;    /* Jarak atas-bawah tetap lega */
+  margin-top: 10px;
+}
+
+
 .tool {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
-  margin: 20px;
-  animation: float 3s ease-in-out infinite;
-  transition: transform 0.3s ease;
 }
 
 .tool img {
-  height: 60px;
-  filter: drop-shadow(0 0 10px #00f5ff);
-  transition: transform 0.3s ease;
+  width: 50px; /* bisa dikecilkan sedikit untuk makin hemat ruang */
+  height: 50px;
+  object-fit: contain;
 }
 
-.tool:hover {
-  transform: scale(1.1);
-}
+
+
 
 /* Animasi bergerak lembut naik-turun */
 @keyframes float {
