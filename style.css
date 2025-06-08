@@ -258,6 +258,7 @@ header {
 .image-circle {
   width: 250px;
   height: 250px;
+  border-radius: 50%;
   background: linear-gradient(135deg, #00ffff, #00ccff);
   padding: 8px;
   box-shadow: 0 0 30px #00ffff, 0 0 60px #00ccff;
@@ -266,22 +267,11 @@ header {
   justify-content: center;
   align-items: center;
 }
-.glow-img {
-  width: 250px;
-  height: auto;
-  filter: drop-shadow(0 0 15px #00ffff);
-  transition: transform 0.3s ease, filter 0.3s ease;
-}
-
-.glow-img:hover {
-  transform: scale(1.05);
-  filter: drop-shadow(0 0 25px #00ffff);
-}
-
 
 .image-circle img {
   width: 100%;
   height: 100%;
+  border-radius: 50%;
   object-fit: cover;
   background-color: #fff;
 }
@@ -334,8 +324,6 @@ header {
   flex-wrap: wrap;
   justify-content: center;
   gap: 30px;
-  max-width: 900px; /* batas maksimal lebar container */
-  margin: 0 auto;   /* supaya container ini di tengah halaman */
 }
 
 .tool {
@@ -344,9 +332,6 @@ header {
   align-items: center;
   color: #0ff;
   text-shadow: 0 0 10px #0ff;
-  width: 100px;  /* atur lebar tetap agar semua tool konsisten */
-  flex-shrink: 0; /* jangan kecilkan saat shrink */
-  box-sizing: border-box;
 }
 
 .tool img {
@@ -396,41 +381,6 @@ header {
   font-weight: 500;
 }
 
-.tools-icons {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 40px;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.tools-icons {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: flex-start; /* pastikan sejajar atas */
-  gap: 40px;
-  margin-top: 40px;
-}
-
-.tool {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100px;
-  text-align: center;
-}
-
-.tool img {
-  width: 60px;
-  height: 60px;
-  object-fit: contain;
-  margin-bottom: 10px;
-}
-
-
-
 /* Floating animation */
 @keyframes float {
   0% {
@@ -474,74 +424,6 @@ header {
 
 .tool:hover {
   transform: scale(1.1);
-}
-
-/* Buat tools section full width dan padding */
-.tools-section {
-  width: 100vw;
-  background-color: #0a0f1c; /* warna latar belakang */
-  padding: 60px 0;
-}
-
-/* Ganti container dengan padding horizontal */
-.tools-container {
-  max-width: 1600px;
-  margin: 0 auto;
-  padding: 0 40px;
-  text-align: center;
-}
-
-/* Tools wrapper jadi grid responsive */
-.tools-icons {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-  gap: 40px;
-  justify-items: center;
-  margin-top: 40px;
-}
-
-/* Tool style seperti sebelumnya */
-.tool {
-  animation: float 3s ease-in-out infinite;
-  transition: transform 0.3s ease;
-}
-
-.tool img {
-  height: 60px;
-  filter: drop-shadow(0 0 10px #00f5ff);
-  transition: transform 0.3s ease;
-}
-
-.tool:hover {
-  transform: scale(1.1);
-}
-
-.tool p {
-  color: #00f5ff;
-  margin-top: 10px;
-  text-shadow: 0 0 5px #00f5ff;
-  font-weight: 500;
-}
-
-/* Glow title + subtitle tetap */
-.glow-title {
-  font-size: 2.5rem;
-  font-weight: bold;
-  color: #00f5ff;
-  text-shadow: 0 0 10px #00f5ff;
-}
-
-.glow-subtitle {
-  color: #ccc;
-  margin-top: 10px;
-  text-shadow: 0 0 5px #00f5ff;
-}
-
-/* Animasi float */
-@keyframes float {
-  0% { transform: translateY(0px); }
-  50% { transform: translateY(-10px); }
-  100% { transform: translateY(0px); }
 }
 
 /* Animasi bergerak lembut naik-turun */
