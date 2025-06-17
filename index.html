@@ -7,6 +7,17 @@
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+  <!-- SweetAlert2 CDN -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+<!-- AOS CSS -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
   <style>
     /* Optional: smooth fade-in for body on load */
     body {
@@ -22,36 +33,49 @@
   <header>
     <nav>
       <div class="logo" style="display: flex; align-items: center; gap: 10px;">
-        <img src="asset/Gambar WhatsApp 2025-03-10 pukul 20.39.55_e165f00b.jpg" alt="Logo" style="height: 35px;">
-        <span style="color: white; font-weight: bold;">Portfolio</span>
+       <i class="fas fa-user-astronaut" style="font-size: 28px; color: #00f7ff; text-shadow: 0 0 8px #00f7ff;"></i>
+        <!-- <span style="color: white; font-weight: bold;">Portfolio</span> -->
       </div>
+
+      <div class="menu-toggle" id="menu-toggle">
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
+
       <ul class="nav-links">
-        <li><a href="#" data-aos="fade-down" data-aos-delay="100">Home</a></li>
-        <li><a href="#" data-aos="fade-down" data-aos-delay="200">About</a></li>
-        <li><a href="#" data-aos="fade-down" data-aos-delay="300">Skills</a></li>
-        <li><a href="#" data-aos="fade-down" data-aos-delay="400">Portfolio</a></li>
-        <li><a href="#" data-aos="fade-down" data-aos-delay="500">Contact</a></li>
+        <li><a href="#home" data-aos="fade-down" data-aos-delay="100">Home</a></li>
+        <li><a href="#mytools" data-aos="fade-down" data-aos-delay="200">My Tools</a></li>
+        <li><a href="#services" data-aos="fade-down" data-aos-delay="200">Services</a></li>
+        <li><a href="#portfolio" data-aos="fade-down" data-aos-delay="400">Portfolio</a></li>
+        <li><a href="#experience" data-aos="fade-down" data-aos-delay="400">Experience</a></li>
+        <li><a href="#education" data-aos="fade-down" data-aos-delay="400">Education</a></li>
+        <li><a href="#contact" data-aos="fade-down" data-aos-delay="500">Contact</a></li>
+        <li><a href="asset/Curiculum Vitae Maedi.pdf" data-aos="fade-down" data-aos-delay="500">Resume</a></li>
       </ul>
     </nav>
   </header>
 
-  <section class="hero">
+  <section id="home" class="hero">
     <div class="hero-text" data-aos="fade-right" data-aos-duration="1000">
       <h4>WELCOME TO MY DIGITAL WORLD</h4>
-      <h1>Hi, I'm <span>Maedi Efendi</span></h1>
+      <h1>Hi, I'm <span>Maedi</span></h1>
       <h3>And I am a <span class="typing-text"></span></h3>
       <p>
         Passionate about building beautiful and responsive websites that combine design with functionality. Let's create something great together.
       </p>
 
-      <div class="social-icons" data-aos="fade-up" data-aos-delay="300">
-        <a href="#"><i class="fab fa-instagram"></i></a>
-        <a href="#"><i class="fab fa-whatsapp"></i></a>
-        <a href="#"><i class="fab fa-tiktok"></i></a>
-        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-      </div>
+     <div class="social-icons" data-aos="fade-up" data-aos-delay="300">
+  <a href="#"><i class="fab fa-instagram"></i></a>
+  <a href="#"><i class="fab fa-whatsapp"></i></a>
+  <a href="#"><i class="fab fa-github"></i></a> <!-- Ganti TikTok dengan GitHub -->
+  <a href="#"><i class="fab fa-linkedin-in"></i></a>
+</div>
+    
+      <button class="btn-glow" id="scrollToContact" data-aos="zoom-in" data-aos-delay="500">
+  More About Me
+</button>
 
-      <button class="btn-glow" data-aos="zoom-in" data-aos-delay="500">More About Me</button>
     </div>
 
     <div class="hero-image" data-aos="fade-left" data-aos-duration="1000">
@@ -61,20 +85,20 @@
     </div>
   </section>
 
-  <section id="my-tools" class="tools-section">
+  <section id="mytools" class="tools-section">
   <div class="tools-layout">
     
-    <!-- Konten kiri (bebas diisi nanti) -->
+    <!-- Konten kiri (bebas diisi nanti)
     <div class="tools-left">
-      <!-- Tempat untuk konten tambahan -->
-    </div>
+       Tempat untuk konten tambahan -->
+    <!-- </div> -->
 
     <!-- Tools di sebelah kanan -->
     <div class="tools-right">
       <h2 class="glow-title" data-aos="fade-up">My Tools</h2>
-      <p class="glow-subtitle" data-aos="fade-up" data-aos-delay="200">
+      <!-- <p class="glow-subtitle" data-aos="fade-up" data-aos-delay="200">
         These are the technologies I work with:
-      </p>
+      </p> -->
 
       <div class="tools-icons" data-aos="fade-up" data-aos-delay="400">
         <!-- Tools Baris 1 -->
@@ -84,21 +108,161 @@
         <div class="tool"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap"><p>Bootstrap</p></div>
 
         <!-- Tools Baris 2 -->
-        <div class="tool"><img src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg" alt="Tailwind"><p>Tailwind</p></div>
-        <div class="tool"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React"><p>React</p></div>
+        <!-- <div class="tool"><img src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg" alt="Tailwind"><p>Tailwind</p></div>
+        <div class="tool"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React"><p>React</p></div> -->
         <div class="tool"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub"><p>GitHub</p></div>
         <div class="tool"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="VS Code"><p>VS Code</p></div>
 
         <!-- Tools Baris 3 -->
         <div class="tool"><img src="https://upload.wikimedia.org/wikipedia/commons/0/04/ChatGPT_logo.svg" alt="ChatGPT"><p>ChatGPT</p></div>
         <div class="tool"><img src="https://cdn-icons-png.flaticon.com/512/732/732220.png" alt="Excel"><p>Excel</p></div>
-        <div class="tool"><img src="https://cdn-icons-png.flaticon.com/512/300/300221.png" alt="Google Sheets"><p>Google Sheets</p></div>
+        <!-- <div class="tool"><img src="https://cdn-icons-png.flaticon.com/512/300/300221.png" alt="Google Sheets"><p>Google Sheets</p></div> -->
         <div class="tool"><img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube"><p>YouTube</p></div>
       </div>
     </div>
 
   </div>
 </section>
+<section id="services" class="section">
+  <div class="container text-center">
+    <h2 class="glow-title" data-aos="fade-up" data-aos-delay="100">Skills</h2>
+    <div class="services-list">
+      <div class="service-item" data-aos="zoom-in" data-aos-delay="200">
+        <img src="asset/Programming-amico (1).png" alt="Web Development">
+        <h3 class="glow-text">Pengembangan Website</h3>
+        <p class="glow-text">Membangun website yang modern, responsif, dan optimal untuk kebutuhan pribadi maupun bisnis.</p>
+      </div>
+      <div class="service-item" data-aos="zoom-in" data-aos-delay="400">
+        <img src="asset/Data extraction-amico (1).png" alt="Data Entry">
+        <h3 class="glow-text">Entri & Pengolahan Data</h3>
+        <p class="glow-text">Mengolah dan merapikan data secara akurat menggunakan Excel dan Google Sheets.</p>
+      </div>
+      <div class="service-item" data-aos="zoom-in" data-aos-delay="600">
+        <img src="asset/Data analysis-amico (1).png" alt="Data Visualization">
+        <h3 class="glow-text">Visualisasi Data</h3>
+        <p class="glow-text">Menyajikan data dalam bentuk grafik dan dashboard interaktif untuk memudahkan analisis.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- PORTFOLIO -->
+<section id="portfolio" class="section">
+  <div class="container text-center">
+    <h2 class="glow-title" data-aos="fade-up" data-aos-delay="100">Portfolio</h2>
+    <div class="portfolio-list">
+      <div class="portfolio-item" data-aos="fade-up" data-aos-delay="200">
+        <img src="asset/Programmer-amico.png" alt="Website UMKM">
+        <h3>Website Profil</h3>
+        <p>Website statis sederhana menggunakan HTML, CSS, dan JavaScript untuk menampilkan informasi bisnis atau individu.</p>
+        <a href="https://maediefendi.github.io/maediefendi/" class="btn-neon">Lihat Proyek</a>
+      </div>
+      <div class="portfolio-item" data-aos="fade-up" data-aos-delay="300">
+        <img src="asset/Investment data-amico.png" alt="Dashboard Penjualan">
+        <h3>Dashboard Penjualan</h3>
+        <p>Dashboard interaktif berbasis Excel untuk memantau data penjualan secara visual dengan grafik dan tabel dinamis.</p>
+        <a href="https://docs.google.com/spreadsheets/..." class="btn-neon">Lihat Proyek</a>
+      </div>
+      <div class="portfolio-item" data-aos="fade-up" data-aos-delay="400">
+        <img src="asset/Select-pana.png" alt="Formulir Pendaftaran">
+        <h3>Formulir LKPD Online</h3>
+        <p>Formulir interaktif berbasis web untuk pengumpulan tugas LKPD secara online, dalam proses belajar mengajar.</p>
+        <a href="https://maediefendi.github.io/LKPD---Based_Leraning/" class="btn-neon">Lihat Proyek</a>
+      </div>
+      <div class="portfolio-item" data-aos="fade-up" data-aos-delay="500">
+        <img src="asset/Static assets-amico.png" alt="Landing Page">
+        <h3>Absensi Karyawan</h3>
+        <p>Aplikasi absensi berbasis website dengan fitur login, absen masuk/pulang otomatis, dan ekspor data ke Excel.</p>
+        <a href="https://maediefendi.github.io/Absensi-Karayawan/" class="btn-neon">Lihat Proyek</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<!-- EXPERIENCE -->
+<section id="experience" class="section">
+  <div class="container text-center">
+    <h2 class="glow-title" data-aos="fade-up">Experience</h2>
+    <div class="experience-container">
+      <div class="experience-box">
+        <img src="asset/iconmonstr-layer-multiple-alt-filled-240.png" alt="Data Entry" class="experience-icon">
+        <h2 class="company-name">CV. kahe Group</h2>
+        <h3>Data Entry</h3>
+        <p>Juli 2024 - Juli 2025</p>
+        <p style="margin-top: 10px; color: white;">
+          Melakukan entri dan pengolahan data menggunakan Excel dan Google Sheets, serta mendukung pengembangan website seperti profil usaha dan sistem absensi.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education" class="section">
+  <div class="container text-center">
+    <h2 class="glow-title" data-aos="fade-up">Education</h2>
+
+    <div class="education-list" data-aos="fade-up" data-aos-delay="300">
+      <div class="education-item">
+        <img src="asset/logo-ut-small-transparent-300x226.png.webp" alt="Universitas Terbuka" style="margin-bottom: 10px; width: 140px; height: auto;">
+        <h3 style="margin-bottom: 5px;">Universitas Terbuka</h3>
+        <h4 style="margin-bottom: 5px;">Sistem Informasi</h4>
+        <h5 style="margin-bottom: 10px;">2025 (Mahasiswa Aktif)</h5>
+        <p style="color: white; margin-bottom: 20px;">
+          Saat ini sedang menempuh pendidikan di Universitas Terbuka jurusan Sistem Informasi untuk mengembangkan pengetahuan di bidang teknologi informasi.
+        </p>
+      </div>
+      <div class="education-item">
+        <img src="asset/images-removebg-preview.png" alt="SMAN 1 Jamblang" style="margin-bottom: 10px; width: 100px; height: auto;">
+        <h3 style="margin-bottom: 5px;">SMAN 1 Jamblang</h3>
+        <h4 style="margin-bottom: 5px;">Ilmu Pengetahuan Sosial</h4>
+        <h5 style="margin-bottom: 10px;">2021 - 2024</h5>
+        <p style="color: white; margin-bottom: 20px;">
+          Lulusan tahun 2024 dengan rata-rata nilai akhir 
+          <span style="font-weight: bold; color: #00ffd5;">87,34</span>. 
+          Memiliki dasar kuat dalam pengolahan data menggunakan Excel & Google Sheets, serta pengenalan HTML, CSS, dan JavaScript.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+<!-- CONTACT -->
+<!-- Contact Section -->
+<section id="contact" class="contact-section">
+  <h2 class="glow-title">Contact</h2>
+  <div class="contact-form-container">
+    <form class="contact-form" action="https://formspree.io/f/mvgrqpde" method="POST">
+      <input type="text" name="nama" placeholder="Nama" required />
+      <input type="email" name="email" placeholder="Email" required />
+      <textarea name="pesan" placeholder="Pesan" required></textarea>
+      <button type="submit">Kirim Pesan</button>
+    </form>
+  </div>
+</section>
+
+
+<!-- Footer -->
+<!-- Footer -->
+<footer class="footer">
+
+   <div class="container">
+    <p>&copy; 2025 Maedi Efendi. All rights reserved.</p>
+    <p>Crafted with by <a href="#home" class="footer-link">Maedi</a></p>
+  </div>
+
+</footer>
+
+
 
   <script>
     const texts = [
@@ -158,6 +322,80 @@
       document.body.classList.add('aos-animated');
     });
   </script>
+
+  <script>
+  const toggleBtn = document.getElementById("menu-toggle");
+  const navLinks = document.querySelector(".nav-links");
+
+  toggleBtn.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+  });
+</script>
+
+<!-- AOS JS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000,       // durasi animasi (ms)
+    easing: 'ease-in-out',// jenis transisi
+    once: false           // animasi bisa berulang kali saat muncul di viewport
+  });
+</script>
+
+<script>
+  document.getElementById("scrollToContact").addEventListener("click", function () {
+    document.getElementById("contact").scrollIntoView({ behavior: "smooth" });
+  });
+</script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const form = document.querySelector(".contact-form");
+
+    form.addEventListener("submit", async function (e) {
+      e.preventDefault();
+
+      const formData = new FormData(form);
+      const action = form.getAttribute("action");
+
+      try {
+        const response = await fetch(action, {
+          method: "POST",
+          body: formData,
+          headers: {
+            Accept: "application/json",
+          },
+        });
+
+        if (response.ok) {
+          // Alert sukses
+          Swal.fire({
+            icon: 'success',
+            title: 'Terkirim!',
+            text: 'Pesan Anda berhasil dikirim.',
+            confirmButtonColor: '#3085d6',
+          });
+          form.reset();
+        } else {
+          Swal.fire({
+            icon: 'error',
+            title: 'Ups!',
+            text: 'Terjadi kesalahan. Silakan coba lagi.',
+            confirmButtonColor: '#d33',
+          });
+        }
+      } catch (error) {
+        Swal.fire({
+          icon: 'error',
+          title: 'Gagal!',
+          text: 'Gagal mengirim pesan. Periksa koneksi Anda.',
+          confirmButtonColor: '#d33',
+        });
+      }
+    });
+  });
+</script>
+
 
 </body>
 </html>
