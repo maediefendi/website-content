@@ -1273,19 +1273,6 @@ nav {
   font-size: 14px; /* font lebih kecil */
 }
 
-    nav {
-      /* top: 0;
-      left: 0; */
-      /* width: 100%; */
-      /* background-color: #000; */
-      /* display: flex; */
-      justify-content: space-between;
-      align-items: center;
-      padding: 6px 20px;
-      z-index: 999;
-      border-radius: 10px 10px 10px 10px;
-      box-shadow: 0 0 12px #00f7ff, 0 0 25px #00f7ff;
-    }
 
 
 
