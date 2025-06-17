@@ -1264,29 +1264,29 @@ nav .nav-links li:hover a {
   margin: 0 auto;
 }
 nav {
-  background-color: #000; /* warna hitam */
-  padding: 10\3px 20px;       /* kecilkan padding atas-bawah */
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 1000;
-  box-shadow: 0 0 10px #00f7ff; /* opsional, efek glow neon */
+  padding: 4px 20px; /* sebelumnya 10px 30px */
+  border-radius: 0 0 8px 8px; /* lebih kecil sudut bawah */
 }
+
 .nav-links li a {
-  padding: 6px 12px;
-  font-size: 14px;
+  padding: 4px 10px; /* sebelumnya 8px 14px */
+  font-size: 14px; /* font lebih kecil */
 }
-.menu-toggle span {
-  height: 2px;
-  background-color: #fff;
-}
-#home {
-  padding-top: 80px; /* sesuaikan dengan tinggi navbar kamu */
-}
+
+    nav {
+      /* top: 0;
+      left: 0; */
+      /* width: 100%; */
+      /* background-color: #000; */
+      /* display: flex; */
+      justify-content: space-between;
+      align-items: center;
+      padding: 6px 20px;
+      z-index: 999;
+      border-radius: 10px 10px 10px 10px;
+      box-shadow: 0 0 12px #00f7ff, 0 0 25px #00f7ff;
+    }
+
 
 
     /* MOBILE STYLE */
