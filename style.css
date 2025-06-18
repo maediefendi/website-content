@@ -11,6 +11,10 @@ body {
   margin: 0;
   padding: 0;
 }
+body, section, footer {
+  background-color: #000000 !important;
+}
+
 
 /* HEADER STICKY / FIXED */
 header {
@@ -741,6 +745,14 @@ body {
   color: #111;
 }
 
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  background-color: #111; /* Tetap gelap */
+  border: 1px solid #00f7ff; /* Warna border neon */
+  color: #0ff; /* Warna teks tetap */
+}
+
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
@@ -994,7 +1006,7 @@ nav {
     }
 
     .nav-links li a:hover {
-      color: cyan;
+      color: #00f7ff;
     }
 
     .menu-toggle {
@@ -1023,6 +1035,9 @@ nav {
 }
 .service-item p {
   color: white;
+}
+.service-item h3 {
+  color: #00f7ff;
 }
 .portfolio-item h3 {
   margin-bottom: 10px; /* Atur sesuai kebutuhan, misalnya 10px */
@@ -1061,7 +1076,7 @@ nav {
 nav .nav-links li {
   display: inline-block;
   margin: 0 5px;
-  border: 2px solid #00ffd5; /* Warna border neon */
+  border: 2px solid #00f7ff; /* Warna border neon */
   border-radius: 8px;
   transition: all 0.3s ease;
 }
@@ -1077,8 +1092,8 @@ nav .nav-links li a {
 
 /* Efek hover */
 nav .nav-links li:hover {
-  background-color: #00ffd5;
-  box-shadow: 0 0 10px #00ffd5, 0 0 20px #00ffd5;
+  background-color: #00f7ff;
+  box-shadow: 0 0 10px #00f7ff, 0 0 20px #00f7ff;
 }
 
 nav .nav-links li:hover a {
@@ -1198,6 +1213,30 @@ nav {
   padding: 4px 10px; /* sebelumnya 8px 14px */
   font-size: 14px; /* font lebih kecil */
 }
+
+.glow-text {
+  color: #ffffff;
+  
+}
+
+.footer-photo.glow-neon {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  box-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff;
+  border: 2px solid #00ffff;
+}
+
+.logo-photo {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 0 8px #00f7ff, 0 0 15px #00f7ff;
+  border: 2px solid #00f7ff;
+}
+
 
 
 
