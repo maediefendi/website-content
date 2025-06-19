@@ -1236,8 +1236,44 @@ nav {
   box-shadow: 0 0 8px #00f7ff, 0 0 15px #00f7ff;
   border: 2px solid #00f7ff;
 }
+ #languageSwitcher {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 20px;
+  padding: 6px 12px;
+  border-radius: 12px;
+  border: none;
+  background-color: #00f7ff;
+  color: #0f172a;
+  font-weight: bold;
+  z-index: 10;
+  box-shadow: 0 0 10px #00f7ff;
+}
 
+#backToTop {
+    display: none;
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    z-index: 99;
+    background-color: #00f7ff;
+    color: #0f172a;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 18px;
+    box-shadow: 0 0 10px #00f7ff;
+    transition: 0.3s;
+  }
 
+@media (max-width: 480px) {
+  #languageSwitcher {
+    font-size: 14px;
+    padding: 5px 10px;
+  }
+}
 
 
     /* MOBILE STYLE */
