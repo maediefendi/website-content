@@ -31,7 +31,66 @@
     body.aos-animated {
       opacity: 1;
     }
-  </style>
+  .experience-list {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background-color: #000;
+  }
+
+  .experience-item {
+    display: flex;
+    flex-direction: row;
+    background-color: #222;
+    border: 1px solid #00ffff;
+    border-radius: 12px;
+    padding: 20px;
+    max-width: 1100px;
+    width: 100%;
+    gap: 20px;
+    color: white;
+    flex-wrap: wrap; /* responsif */
+  }
+
+  .experience-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    min-width: 220px;
+    max-width: 250px;
+  }
+
+  .experience-left img {
+    width: 80px;
+    height: auto;
+    margin-bottom: 10px;
+  }
+
+  .experience-left h3, 
+  .experience-left h4, 
+  .experience-left h5 {
+    margin: 5px 0;
+  }
+
+  .experience-right {
+    flex: 1;
+    min-width: 300px;
+  }
+
+  .experience-right p {
+    text-align: justify;
+    line-height: 1.6;
+  }
+
+  @media (max-width: 768px) {
+    .experience-item {
+      flex-direction: column;
+    }
+    .experience-left, .education-right {
+      max-width: 100%;
+    }
+  }
+</style>
 </head>
 
 <body data-aos="fade-in">
@@ -160,15 +219,15 @@
     <!-- EXPERIENCE SECTION -->
     <h2 class="glow-title" data-aos="fade-up" style="margin-top: 50px;">Experience</h2>
 
-    <div class="education-list" data-aos="fade-up" data-aos-delay="300">
+    <div class="experience-list" data-aos="fade-up" data-aos-delay="300">
       <!-- Experience - Data Entry Kahe Group -->
-      <div class="education-item">
+      <div class="experience-item">
         <img src="asset/c10dfea15a45dd060938f68fc75c69cd.webp" alt="CV. Kahe Group" style="margin-bottom: 10px; width: 60px; height: auto;">
         <h3 style="margin-bottom: 5px;">CV. Kahe Group</h3>
         <h4 style="margin-bottom: 5px;">Staff Data Entry</h4>
         <h5 style="margin-bottom: 10px;">Juli 2024 – Juli 2025</h5>
         <p style="color: white; margin-bottom: 10px;">
-          Bertanggung jawab dalam penginputan dan pengelolaan data internal perusahaan secara akurat dan efisien. Membantu tim administrasi dalam menyusun laporan dan dokumentasi.
+          Tugas saya meliputi penginputan data dari berbagai sumber ke dalam sistem perusahaan secara akurat dan efisien. Saya juga bertanggung jawab dalam manajemen data karyawan, termasuk memperbarui informasi seperti NIK, status kepegawaian, dan data magang. Dalam mendukung administrasi internal, saya menyusun dokumen karyawan seperti ID Card serta sertifikat pelatihan dan magang. Saya mengolah dan memvisualisasikan data untuk disajikan dalam bentuk laporan serta grafik yang informatif. Selain itu, saya membuat konten visual untuk memperingati Hari Besar Nasional dan kebutuhan komunikasi internal perusahaan. Saya juga melaksanakan tugas scraping data, yaitu mengumpulkan dan menginput data dalam jumlah besar guna memenuhi kebutuhan operasional perusahaan.
         </p>
       </div>
     </div>
